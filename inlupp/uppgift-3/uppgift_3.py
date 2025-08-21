@@ -3,7 +3,6 @@
 
 def max_in_list(numbers: list[int]) -> int:
     """
-    Skriv beskrivning här.
     """
     return max(numbers)
 

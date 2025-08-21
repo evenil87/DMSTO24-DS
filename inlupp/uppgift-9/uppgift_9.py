@@ -1,8 +1,11 @@
 # Uppgift 9
 # Skapa en funktion is_palindrome(string) som kontrollerar om en given sträng är ett palindrom (dvs. samma framifrån och bakifrån).
 
-def funktions_namn(variabel_namn: datatyp) -> returtyp:
+def is_palindrome(string: str) -> bool:
     """
-    Skriv beskrivning här.
+    Palindrom kontroll
+    Ignorerar stora/små bokstäver och mellanslag.
     """
-    pass # Ta bort denna rad och skriv din kod här
+    # Gör allt till små bokstäver och ta bort mellanslag
+    cleaned = string.replace(" ", "").lower()
+    return cleaned == cleaned[::-1]

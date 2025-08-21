@@ -1,8 +1,11 @@
 # Uppgift 11
 # Skapa en funktion word_count(text) som returnerar antalet ord i en given text.
 
-def funktions_namn(variabel_namn: datatyp) -> returtyp:
+def word_count(text: str) -> int:
     """
-    Skriv beskrivning här.
+    Tar emot en text (sträng) och returnerar antalet ord.
+
     """
-    pass # Ta bort denna rad och skriv din kod här
+    # Dela texten på mellanslag och räkna elementen
+    words = text.split()
+    return len(words)
